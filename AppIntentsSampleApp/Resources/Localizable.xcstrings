@@ -1,0 +1,368 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@" : {
+
+    },
+    "%@ - %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ - %2$@"
+          }
+        }
+      }
+    },
+    "%@ on %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ on %2$@"
+          }
+        }
+      }
+    },
+    "%lld activities" : {
+
+    },
+    "%lld featured trail collections" : {
+
+    },
+    "%lld trails" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "needs_review",
+                  "value" : "%lld trails"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : "%lld trails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "A gentle run" : {
+
+    },
+    "A lengthy outdoor walk" : {
+
+    },
+    "Activity" : {
+
+    },
+    "Activity History" : {
+
+    },
+    "Activity Statistics" : {
+
+    },
+    "Activity Summary" : {
+
+    },
+    "Activity Tracking" : {
+
+    },
+    "Are you sure you want to purchase a day pass for %@?" : {
+
+    },
+    "Biking" : {
+
+    },
+    "Buy Day Pass" : {
+
+    },
+    "Calories Burned" : {
+
+    },
+    "Could not find the requested trail." : {
+
+    },
+    "Cross-country skiing" : {
+
+    },
+    "Details" : {
+
+    },
+    "Did not recognize %@ as a location." : {
+
+    },
+    "Did you mean %@?" : {
+
+    },
+    "Discover" : {
+
+    },
+    "Distance Traveled" : {
+
+    },
+    "End Activity" : {
+
+    },
+    "End Trail Activity" : {
+
+    },
+    "Ends tracking a trail activity." : {
+
+    },
+    "Equestrian" : {
+
+    },
+    "Equestrian sports" : {
+
+    },
+    "Featured Collection" : {
+
+    },
+    "Featured Locations" : {
+
+    },
+    "Featured Trail Collection" : {
+
+    },
+    "Find a featured trail collection." : {
+
+    },
+    "For You" : {
+
+    },
+    "Get Next Navigation Step" : {
+
+    },
+    "Get Trail Information" : {
+
+    },
+    "Here's the latest information on trail conditions." : {
+
+    },
+    "Hiking" : {
+
+    },
+    "Jogging" : {
+
+    },
+    "location" : {
+
+    },
+    "Location" : {
+
+    },
+    "Mountain bike ride" : {
+
+    },
+    "Multiple locations match %@. Did you mean one of these locations?" : {
+
+    },
+    "Name" : {
+
+    },
+    "No Activity History" : {
+
+    },
+    "No activity is currently being tracked." : {
+
+    },
+    "Open Favorite Trails" : {
+
+    },
+    "Open Favorites" : {
+
+    },
+    "Opens the app and goes to your favorite trails." : {
+
+    },
+    "Pause Trail Activity" : {
+
+    },
+    "Pauses tracking a trail activity." : {
+
+    },
+    "Pick something from the list." : {
+
+    },
+    "Plan your next trip to the great outdoors with some suggestions on what you'll enjoy doing." : {
+
+    },
+    "Please provide a location." : {
+
+    },
+    "Provides complete details on a trail, including the permitted activities and the current conditions." : {
+
+    },
+    "Provides the next step during navigation, such as when to take an upcoming turn." : {
+
+    },
+    "Purchase a day pass for your trail activity with Apple Pay." : {
+
+    },
+    "Record activites through Siri, Spotlight, the Shortcuts app, or the Action button on Apple Watch Ultra." : {
+
+    },
+    "Region" : {
+
+    },
+    "Resume Trail Activity" : {
+
+    },
+    "Resumes tracking a trail activity." : {
+
+    },
+    "Search for the best trails matching your interest based on complex criteria." : {
+
+    },
+    "Search Radius" : {
+
+    },
+    "Select a Trail" : {
+
+    },
+    "Select a Trail Collection" : {
+
+    },
+    "Skiing" : {
+
+    },
+    "Snowshoeing" : {
+
+    },
+    "Start Activity" : {
+
+    },
+    "Start Trail Activity" : {
+
+    },
+    "Starts tracking a trail activity." : {
+
+    },
+    "Suggest Trails" : {
+
+    },
+    "Suggested Trails" : {
+
+    },
+    "Summarize Activities" : {
+
+    },
+    "Summarizes activities tracked by the app to monitor progress towards a goal." : {
+
+    },
+    "Summary Start Date" : {
+
+    },
+    "The activity to track, such as skiing." : {
+
+    },
+    "The latest conditions reported for %@ indicate: %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "The latest conditions reported for %1$@ indicate: %2$@."
+          }
+        }
+      }
+    },
+    "The trail to get information on." : {
+
+    },
+    "Tracking an Activity" : {
+
+    },
+    "trail" : {
+
+    },
+    "Trail" : {
+
+    },
+    "Trail Collections" : {
+
+    },
+    "Trail Length" : {
+
+    },
+    "Trail Name" : {
+
+    },
+    "Trails" : {
+
+    },
+    "travel" : {
+
+    },
+    "Unable to process payment." : {
+
+    },
+    "Unknown Activity Style" : {
+
+    },
+    "Walking in the snow" : {
+
+    },
+    "Welcome!" : {
+
+    },
+    "What activity would you like to do?" : {
+
+    },
+    "Where would you like to go?" : {
+
+    },
+    "workout" : {
+
+    },
+    "Workout Summary" : {
+
+    },
+    "Workout tracking failed to start." : {
+
+    },
+    "Workouts Completed" : {
+
+    },
+    "You are not logged in. Press the Continue button to open the app and log in." : {
+
+    },
+    "You are signed in" : {
+
+    },
+    "You are signed out" : {
+
+    },
+    "You burned %lld calories." : {
+
+    },
+    "You completed %lld workouts in %@. Incredible!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You completed %1$lld workouts in %2$@. Incredible!"
+          }
+        }
+      }
+    },
+    "You haven't logged a workout yet." : {
+
+    },
+    "You haven't logged a workout yet. Let's get started!" : {
+
+    },
+    "Your purchase was cancelled." : {
+
+    },
+    "Your trail day pass is active." : {
+
+    }
+  },
+  "version" : "1.0"
+}
