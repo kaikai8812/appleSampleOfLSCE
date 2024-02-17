@@ -45,6 +45,21 @@ class TrailShortcuts: AppShortcutsProvider {
         shortTitle: "Start Activity",
         systemImageName: "shoeprints.fill")
         
+        /// `GetTrailInfo` allows people to quickly check the conditions on their favorite trails.
+        AppShortcut(intent: GetTrailInfo(), phrases: [
+            "Get \(\.$trail) conditions with \(.applicationName)",
+            "Get conditions on \(\.$trail) with \(.applicationName)"
+        ],
+        shortTitle: "Get Conditions",
+        systemImageName: "cloud.rainbow.half",
+        parameterPresentation: ParameterPresentation(
+            for: \.$trail,
+            summary: Summary("Get \(\.$trail) conditions"),
+            optionsCollections: {
+                OptionsCollection(TrailEntityQuery(), title: "Favorite Trails", systemImageName: "cloud.rainbow.half")
+            }
+        ))
+        
         /// `OpenFavorites` brings the app to the foreground and displays the contents of the Favorites collection in the UI.
         AppShortcut(intent: OpenFavorites(), phrases: [
             "Open Favorites in \(.applicationName)",

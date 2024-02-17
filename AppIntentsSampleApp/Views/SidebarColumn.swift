@@ -43,7 +43,7 @@ struct SidebarColumn: View {
                 }
             }
             
-        #if os(iOS)
+        #if os(iOS) || os(visionOS)
             HStack {
                 Spacer()
                 

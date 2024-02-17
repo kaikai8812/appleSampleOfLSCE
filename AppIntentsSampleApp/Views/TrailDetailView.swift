@@ -32,7 +32,7 @@ struct TrailDetailView: View {
         }
         .navigationTitle(trail.name)
         
-    #if os(iOS)
+    #if os(iOS) || os(visionOS)
         .listStyle(.grouped)
         .navigationBarTitleDisplayMode(.inline)
     #endif

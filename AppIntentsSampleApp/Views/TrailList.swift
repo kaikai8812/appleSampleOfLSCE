@@ -22,7 +22,7 @@ struct TrailList: View {
             if let trailCollection = navigationModel.selectedCollection {
                 @Bindable var navigationModel = navigationModel
                 List(selection: $navigationModel.selectedTrail) {
-                #if os(iOS)
+                #if os(iOS) || os(visionOS)
                     if trailCollection.collectionType == .favorites {
                         /**
                          `SiriTipView` pairs with an intent the system uses as an App Shortcut. It provides a small view with the phrase from the

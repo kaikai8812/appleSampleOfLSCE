@@ -63,7 +63,7 @@ extension TrailCollection: AppEntity {
     
     /// Information on how to display the entity to people.
     var displayRepresentation: DisplayRepresentation {
-        DisplayRepresentation(title: LocalizedStringResource(stringLiteral: displayName),
+        DisplayRepresentation(title: "\(displayName)",
                               image: DisplayRepresentation.Image(systemName: symbolName))
     }
 }

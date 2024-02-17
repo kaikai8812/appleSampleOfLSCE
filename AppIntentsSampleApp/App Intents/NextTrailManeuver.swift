@@ -44,7 +44,6 @@ struct NextTrailManeuver: AppIntent {
          If you return `.result()`, the Action button continues to call this intent on each button press until the app returns or donates a
          different intent.
          */
-        let dialog = IntentDialog(stringLiteral: activityTracker.nextManeuver ?? "")
-        return .result(actionButtonIntent: EndTrailActivity(), dialog: dialog)
+        return .result(actionButtonIntent: EndTrailActivity(), dialog: "\(activityTracker.nextManeuver ?? "")")
     }
 }
