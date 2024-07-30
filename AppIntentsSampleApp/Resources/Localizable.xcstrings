@@ -121,6 +121,9 @@
     "Equestrian sports" : {
 
     },
+    "Favorite Trails" : {
+
+    },
     "Featured Collection" : {
 
     },
@@ -137,6 +140,9 @@
 
     },
     "Get Conditions" : {
+
+    },
+    "Get information on ${trail}" : {
 
     },
     "Get Next Navigation Step" : {
@@ -190,6 +196,9 @@
     "Pauses tracking a trail activity." : {
 
     },
+    "Pick a bike ride from ${trailCollection}" : {
+
+    },
     "Pick something from the list." : {
 
     },
@@ -220,6 +229,9 @@
     "Resumes tracking a trail activity." : {
 
     },
+    "Ride a bike within ${searchRadius} of ${location}" : {
+
+    },
     "Search for the best trails matching your interest based on complex criteria." : {
 
     },
@@ -241,10 +253,25 @@
     "Start Activity" : {
 
     },
+    "Start tracking my ${workoutStyle} activity" : {
+
+    },
     "Start Trail Activity" : {
 
     },
     "Starts tracking a trail activity." : {
+
+    },
+    "Suggest ${activity} trails from ${trailCollection}" : {
+
+    },
+    "Suggest ${activity} trails from ${trailCollection} or near ${location}" : {
+
+    },
+    "Suggest ${activity} trails within ${searchRadius} of ${location}" : {
+
+    },
+    "Suggest bike rides from ${trailCollection} or near ${location}" : {
 
     },
     "Suggest Trails" : {
@@ -288,9 +315,6 @@
 
     },
     "Trail Collections" : {
-
-    },
-    "Trail Conditions" : {
 
     },
     "Trail Length" : {
