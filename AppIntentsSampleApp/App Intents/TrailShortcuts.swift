@@ -60,13 +60,22 @@ class TrailShortcuts: AppShortcutsProvider {
             }
         ))
         
-        /// `OpenFavorites` brings the app to the foreground and displays the contents of the Favorites collection in the UI.
-        AppShortcut(intent: OpenFavorites(), phrases: [
-            "Open Favorites in \(.applicationName)",
-            "Show my favorite \(.applicationName)"
+//        / `OpenFavorites` brings the app to the foreground and displays the contents of the Favorites collection in the UI.
+//        AppShortcut(intent: OpenFavorites(), phrases: [
+//            "Open Favorites in \(.applicationName)",
+//            "Show my favorite \(.applicationName)"
+//        ],
+//        shortTitle: "Open Favorites",
+//        systemImageName: "star.circle")
+        
+        
+        // これで、アプリのショートカットは登録されるが、動作的には動いていない。
+        AppShortcut(intent: LockedCaptureIntent(), phrases: [
+            "test①：\(.applicationName)", // applicationNameが入っていないと、動かない
+            "test②：\(.applicationName)"   // ここで指定しているかも?
         ],
-        shortTitle: "Open Favorites",
-        systemImageName: "star.circle")
+        shortTitle: "カメラへのショートカット",
+        systemImageName: "camera.shutter.button")
         
         /// `BuyDayPass` allows people to purchase a day pass, as an example of a routine purchase that people may frequently perform.
         AppShortcut(intent: BuyDayPass(), phrases: [

@@ -49,7 +49,20 @@
 		986A29792A22DDB4007385E4 /* AppIntents.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 986A297C2A22DDB4007385E4 /* AppIntents.stringsdict */; };
 		986A297D2A22E1DB007385E4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 98C52D7A2A1B2F5300A3250F /* Localizable.xcstrings */; };
 		98810CD12A39171B00867010 /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 98810CD02A39171B00867010 /* AppShortcuts.xcstrings */; };
+		EB4954972C58F8900075D301 /* LockedCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4954962C58F8900075D301 /* LockedCapture.swift */; };
+		EB4954992C58F8900075D301 /* LockedCaptureViewFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4954982C58F8900075D301 /* LockedCaptureViewFinder.swift */; };
+		EB49549D2C58F8900075D301 /* LockedCapture.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = EB4954942C58F8900075D301 /* LockedCapture.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB49549B2C58F8900075D301 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6023719C29C929BA00111FCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB4954932C58F8900075D301;
+			remoteInfo = LockedCapture;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		600DDFA529F88C3000CCF1E5 /* Embed Watch Content */ = {
@@ -70,6 +83,17 @@
 			files = (
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB49549E2C58F8900075D301 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				EB49549D2C58F8900075D301 /* LockedCapture.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -122,11 +146,22 @@
 		98810CD02A39171B00867010 /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
 		98C52D7A2A1B2F5300A3250F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		BC99238A4428CB639876D71F /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		EB4954942C58F8900075D301 /* LockedCapture.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = LockedCapture.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4954962C58F8900075D301 /* LockedCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedCapture.swift; sourceTree = "<group>"; };
+		EB4954982C58F8900075D301 /* LockedCaptureViewFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedCaptureViewFinder.swift; sourceTree = "<group>"; };
+		EB49549A2C58F8900075D301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCDA01C3842AF955ED2747A3 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		602371A129C929BA00111FCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4954912C58F8900075D301 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -149,6 +184,7 @@
 			children = (
 				8A82C1A9043A4C71A4368975 /* README.md */,
 				602371A629C929BA00111FCD /* AppIntentsSampleApp */,
+				EB4954952C58F8900075D301 /* LockedCapture */,
 				602371A529C929BA00111FCD /* Products */,
 				53952D5C28F54EAE0662E93B /* Configuration */,
 				ECB5828DBC2479CDBF30822B /* LICENSE */,
@@ -159,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				602371A429C929BA00111FCD /* AppIntentsSampleApp.app */,
+				EB4954942C58F8900075D301 /* LockedCapture.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,6 +307,16 @@
 			path = "Workout Intents";
 			sourceTree = "<group>";
 		};
+		EB4954952C58F8900075D301 /* LockedCapture */ = {
+			isa = PBXGroup;
+			children = (
+				EB4954962C58F8900075D301 /* LockedCapture.swift */,
+				EB4954982C58F8900075D301 /* LockedCaptureViewFinder.swift */,
+				EB49549A2C58F8900075D301 /* Info.plist */,
+			);
+			path = LockedCapture;
+			sourceTree = "<group>";
+		};
 		ECB5828DBC2479CDBF30822B /* LICENSE */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,15 +338,34 @@
 				602371A229C929BA00111FCD /* Resources */,
 				6051DC2329E3918C006FE5AD /* Embed Frameworks */,
 				600DDFA529F88C3000CCF1E5 /* Embed Watch Content */,
+				EB49549E2C58F8900075D301 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EB49549C2C58F8900075D301 /* PBXTargetDependency */,
 			);
 			name = AppIntentsSampleApp;
 			productName = SnowFun;
 			productReference = 602371A429C929BA00111FCD /* AppIntentsSampleApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EB4954932C58F8900075D301 /* LockedCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB4954A12C58F8900075D301 /* Build configuration list for PBXNativeTarget "LockedCapture" */;
+			buildPhases = (
+				EB4954902C58F8900075D301 /* Sources */,
+				EB4954912C58F8900075D301 /* Frameworks */,
+				EB4954922C58F8900075D301 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LockedCapture;
+			productName = LockedCapture;
+			productReference = EB4954942C58F8900075D301 /* LockedCapture.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -308,12 +374,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					602371A329C929BA00111FCD = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					EB4954932C58F8900075D301 = {
+						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
@@ -331,6 +400,7 @@
 			projectRoot = "";
 			targets = (
 				602371A329C929BA00111FCD /* AppIntentsSampleApp */,
+				EB4954932C58F8900075D301 /* LockedCapture */,
 			);
 		};
 /* End PBXProject section */
@@ -345,6 +415,13 @@
 				986A297D2A22E1DB007385E4 /* Localizable.xcstrings in Resources */,
 				98810CD12A39171B00867010 /* AppShortcuts.xcstrings in Resources */,
 				986A29792A22DDB4007385E4 /* AppIntents.stringsdict in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4954922C58F8900075D301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +472,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB4954902C58F8900075D301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4954972C58F8900075D301 /* LockedCapture.swift in Sources */,
+				EB4954992C58F8900075D301 /* LockedCaptureViewFinder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB49549C2C58F8900075D301 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB4954932C58F8900075D301 /* LockedCapture */;
+			targetProxy = EB49549B2C58F8900075D301 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		986A297C2A22DDB4007385E4 /* AppIntents.stringsdict */ = {
@@ -551,6 +645,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppIntentsSampleApp/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Trails Sample App";
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラを使用します！";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -595,6 +690,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppIntentsSampleApp/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Trails Sample App";
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラを使用します！";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -620,6 +716,68 @@
 			};
 			name = Release;
 		};
+		EB49549F2C58F8900075D301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KJ7MT7V8HJ;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockedCapture/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LockedCapture;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Apple. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AppIntentsSampleAppKJ7MT7V8HJ.LockedCapture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB4954A02C58F8900075D301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KJ7MT7V8HJ;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockedCapture/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LockedCapture;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Apple. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.AppIntentsSampleAppKJ7MT7V8HJ.LockedCapture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -637,6 +795,15 @@
 			buildConfigurations = (
 				602371B429C929BC00111FCD /* Debug */,
 				602371B529C929BC00111FCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB4954A12C58F8900075D301 /* Build configuration list for PBXNativeTarget "LockedCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB49549F2C58F8900075D301 /* Debug */,
+				EB4954A02C58F8900075D301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

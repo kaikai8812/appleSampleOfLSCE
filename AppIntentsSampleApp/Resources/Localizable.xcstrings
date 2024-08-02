@@ -184,9 +184,6 @@
     "Open Favorite Trails" : {
 
     },
-    "Open Favorites" : {
-
-    },
     "Opens the app and goes to your favorite trails." : {
 
     },
@@ -391,6 +388,12 @@
 
     },
     "Your trail day pass is active." : {
+
+    },
+    "カメラ" : {
+
+    },
+    "カメラへのショートカット" : {
 
     }
   },
